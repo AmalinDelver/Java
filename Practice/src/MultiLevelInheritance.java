@@ -7,7 +7,7 @@ public class MultiLevelInheritance {
     }
 }
 
-class rectangle {
+class Rectangle {
     int l, w, h;
 
     public void initialize() {
@@ -17,7 +17,7 @@ class rectangle {
     }
 }
 
-class area extends rectangle {
+class area extends Rectangle {
     public void area() {
         int a1 = l * w;
         System.out.print("Area of rectangle is l*w" + a1);
