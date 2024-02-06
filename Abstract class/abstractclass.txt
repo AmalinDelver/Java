@@ -1,0 +1,65 @@
+abstract class animal
+{
+    abstract public void Eat();
+    abstract public void Sleep();
+    public void hide()
+    {
+        System.out.println("Animal hide");
+    }
+}
+
+class Lion extends animal {
+    public void Eat()
+
+    {
+        System.out.println("Lion eat meat");
+    }
+
+    public void Sleep()
+{
+        System.out.println("Lion sleep at its cave");
+    }
+}
+
+class tiger extends animal
+{
+    public void Eat()
+    {
+        System.out.println("Tiger eat its prey");
+    }
+    public void Sleep()
+    {
+        System.out.println("Tiger sleeps in a tree");
+    }
+}
+class Deer extends animal
+{
+    public void Eat()
+    {
+        System.out.println("Deer eat Grass");
+    }
+    public void Sleep()
+    {
+        System.out.println("Deer sleeps near water");
+    }
+}
+public class abstractclass
+{
+    public static void main(String[] args)
+    {
+        Lion a1=new Lion();
+        a1.Eat();
+        a1.Sleep();
+        a1.hide();
+
+        tiger b1=new tiger();
+        b1.Eat();
+        b1.Sleep();
+        b1.hide();
+
+        Deer d1=new Deer();
+        d1.Eat();
+        d1.Sleep();
+        d1.hide();
+        }
+    }

@@ -1,0 +1,21 @@
+public class Marks1 extends Throwable
+{
+    public static void main(String[] args)
+    {
+        Scanner s1 = new Scanner(System.in);
+        try {
+            System.out.println("Mark of student A:");
+            int Marks = s1.nextInt();
+            if (Marks < 0)
+            {
+                throw new IllegalArgumentException("Marks cannot be in negative");
+            } else
+            {
+                System.out.println("Your mark is: " + Marks);
+            }
+        } catch (IllegalArgumentException e)
+        {
+            System.out.println("Error: " + e.getMessage());
+        }
+    }
+}
